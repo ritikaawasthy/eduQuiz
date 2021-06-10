@@ -1,1 +1,1 @@
-web gunicorn eduQuiz.wsgi --log-file -
+web gunicorn eduQuiz.wsgi 
