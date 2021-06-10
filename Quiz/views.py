@@ -89,7 +89,9 @@ def quiz(request, id):
     print(len(obj))
     if(next<=len(obj) and next>0 and prev>-1):
         queObj=Question.objects.filter(pk=id)
+        print(queObj)
         queDict=queObj.values()
+        print(queDict)
         que=queDict[0]['name']
         optionList=[queDict[0]['option1'], queDict[0]['option2'], queDict[0]['option3'], queDict[0]['option4']]
         correctAns= queDict[0]['ans']
