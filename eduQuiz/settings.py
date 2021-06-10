@@ -140,7 +140,7 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 '''
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 import django_heroku
 django_heroku.settings(locals())
