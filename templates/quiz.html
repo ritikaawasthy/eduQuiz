@@ -33,7 +33,7 @@
 <div class="preloader-inner position-relative">
 <div class="preloader-circle"></div>
 <div class="preloader-img pere-text">
-<img src="assets/img/logo/logo.png" alt="">
+<img src="{% static 'assets/img/logo/logo.png %}" alt="">
 </div>
 </div>
 </div>
@@ -94,7 +94,7 @@
   {% if next != 0 and next != id %}
 <article class="blog_item">
 <div class="blog_item_img">
-<img class="card-img rounded-0" src="assets/img/blog/single_blog_1.png" alt="">
+<img class="card-img rounded-0" src="{% static 'assets/img/blog/single_blog_1.png' %}" alt="">
 <a href="#" class="blog_item_date">
 <h3>{{id}}</h3>
 </a>
@@ -107,7 +107,7 @@
 </a>
 <br>
 {% for option in optionList %}
-<ul class="unordered-list">
+<ul class="unordered-list"
 <li>
 <label for="">{{option}}</label>
 <input class="primary-checkbox" type="checkbox" name="ans" value="{{option}}">
@@ -138,7 +138,7 @@
 {% elif next == id %}
 <article class="blog_item">
 <div class="blog_item_img">
-<img class="card-img rounded-0" src="assets/img/blog/single_blog_1.png" alt="">
+<img class="card-img rounded-0" src="{% static 'assets/img/blog/single_blog_1.png' %}" alt="">
 <a href="{% url 'report' %}" class="blog_item_date">
 <h3>Check Score</h3>
 </a>
