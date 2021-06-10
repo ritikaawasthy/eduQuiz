@@ -25,7 +25,8 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
+SESSION_COOKIE_SECURE= True
+CSRF_COOKIE_SECURE= True
 ALLOWED_HOSTS = ['eduquin.herokuapp.com', '127.0.0.1']
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField'
